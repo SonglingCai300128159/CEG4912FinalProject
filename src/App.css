@@ -1,0 +1,84 @@
+.app {
+  background-color: rgb(167, 194, 174);
+  flex-direction: column;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 90vh;
+}
+
+.title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ddd;
+  padding: 20px;
+}
+
+.title-box {
+  padding: 20px;
+  border: 5px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.Left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+  padding: 20px;
+  border: 5px solid #ddd;
+}
+
+.Middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.Battery_Main {
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 5px solid #ddd;
+  flex-grow: 1;
+}
+.Camera_Main{
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 5px solid #ddd;
+  flex-grow: 1;
+}
+.Right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Water_Main {
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 5px solid #ddd;
+  flex-grow: 1;
+}
+.Environment_Main {
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 5px solid #ddd;
+  flex-grow: 1;
+}
