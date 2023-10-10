@@ -6,14 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./background1.jpg'); /* Set the background image */
-  background-size: cover; /* Scale the background image to cover the entire container */
+  background-size: 100% 100%; /* 调整背景大小以覆盖整个容器 */
   background-repeat: no-repeat; /* Prevent background image from repeating */
   background-position: center; /* Center the background image */
-  
-  height: 100%;
   margin: 0;
   padding: 0;
-  
+  background-attachment: fixed; /* 固定背景图像在视口上 */
 }
 
 code {

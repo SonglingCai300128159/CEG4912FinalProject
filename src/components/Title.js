@@ -1,7 +1,7 @@
 function TITLE() {
     return (
         <div>
-            <h2>Title</h2>    
+            <h2>Net Zero Tiny House Control System</h2>    
         </div>
     );
 };

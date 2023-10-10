@@ -10,7 +10,7 @@
 }
 
 .title {
-  background-color: #fff; /* 标题背景色 */
+  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
   border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
   margin-bottom: 20px; /* 底部边距 */
@@ -32,11 +32,13 @@
 .Water_Main,
 .Environment_Main {
   flex: 1; /* 让模块自动增长 */
-  background-color: #fff; /* 模块背景色 */
+  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
   border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
   min-width: 300px; /* 设置最小宽度 */
+  backdrop-filter: blur(10px); /* 添加模糊效果 */
+  opacity: 0.9; /* 降低块的不透明度 */
 }
 
 @media (max-width: 768px) {

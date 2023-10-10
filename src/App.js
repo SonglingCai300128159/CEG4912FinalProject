@@ -7,6 +7,7 @@ import BATTERY_MAIN from './components/BATTERY_MAIN';
 import FUNCTION_BAR from './components/FUNCTION_BAR';
 
 function App() {
+  
   return (
     <div className="app">
       <header className="title">

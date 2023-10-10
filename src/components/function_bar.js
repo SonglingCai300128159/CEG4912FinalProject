@@ -1,7 +1,20 @@
 function FUNCTION_BAR() {
     return (
         <div>
-            <h2>function here</h2>
+            <ul>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+                <li>function here</li>
+            </ul>
         </div>
     );
 };
