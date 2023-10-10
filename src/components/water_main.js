@@ -1,9 +1,9 @@
-function water_main() {
+function WATER_MAIN() {
     return (
         <div>
-            <h2>water here</h2>       
+            <p>water here</p>       
         </div>
     );
 };
 
-export default water_main;
+export default WATER_MAIN;

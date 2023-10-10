@@ -1,9 +1,9 @@
-function environment_main() {
+function ENVIRONMENT_MAIN() {
     return (
         <div>
-            <p>Made with love by Myself</p>
+            <p>envionment</p>
         </div>
     );
 };
 
-export default environment_main;
+export default ENVIRONMENT_MAIN;

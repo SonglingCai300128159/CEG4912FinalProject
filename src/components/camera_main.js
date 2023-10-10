@@ -1,10 +1,8 @@
-function camera_main() {
+function CAMERA_MAIN() {
     return (
-        <div>
-            <h3>I've become a React developer!</h3>
-                
-        </div>
+        <h3>camera</h3>
+      
     );
 };
 
-export default camera_main;
+export default CAMERA_MAIN;

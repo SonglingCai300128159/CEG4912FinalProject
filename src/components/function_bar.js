@@ -1,4 +1,4 @@
-function function_bar() {
+function FUNCTION_BAR() {
     return (
         <div>
             <h2>function here</h2>
@@ -6,4 +6,4 @@ function function_bar() {
     );
 };
 
-export default function_bar;
+export default FUNCTION_BAR;
