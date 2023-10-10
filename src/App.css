@@ -1,84 +1,62 @@
+/* App.css */
+
 .app {
-  background-color: rgb(167, 194, 174);
-  flex-direction: column;
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1%;
-  margin-right: 1%;
-  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  padding: 20px;
 }
 
 .title {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid #ddd;
+  background-color: #fff; /* 标题背景色 */
+  border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
-}
-
-.title-box {
-  padding: 20px;
-  border: 5px solid #ddd;
+  margin-bottom: 20px; /* 底部边距 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  text-align: center;
 }
 
 .content {
-  flex: 1;
   display: flex;
   justify-content: space-between;
-  
+  flex-wrap: wrap; /* 允许子元素换行 */
+  gap: 20px; /* 子元素之间的间距 */
+  width: 100%;
 }
 
-.Left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  
-  padding: 20px;
-  border: 5px solid #ddd;
-}
-
-.Middle {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-.Battery_Main {
-  flex: 1;
-  margin-bottom: 10px;
-  padding: 20px;
-  border: 5px solid #ddd;
-  flex-grow: 1;
-}
-.Camera_Main{
-  flex: 1;
-  margin-bottom: 10px;
-  padding: 20px;
-  border: 5px solid #ddd;
-  flex-grow: 1;
-}
-.Right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.Water_Main {
-  flex: 1;
-  margin-bottom: 10px;
-  padding: 20px;
-  border: 5px solid #ddd;
-  flex-grow: 1;
-}
+.Function_Bar,
+.Battery_Main,
+.Camera_Main,
+.Water_Main,
 .Environment_Main {
-  flex: 1;
-  margin-bottom: 10px;
+  flex: 1; /* 让模块自动增长 */
+  background-color: #fff; /* 模块背景色 */
+  border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
-  border: 5px solid #ddd;
-  flex-grow: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  min-width: 300px; /* 设置最小宽度 */
+}
+
+@media (max-width: 768px) {
+  /* 在小屏幕上，每行显示两个模块 */
+  .Function_Bar,
+  .Battery_Main,
+  .Camera_Main,
+  .Water_Main,
+  .Environment_Main {
+    flex-basis: calc(50% - 10px); /* 50%减去间距 */
+  }
+}
+
+@media (max-width: 480px) {
+  /* 在更小的屏幕上，每行显示一个模块 */
+  .Function_Bar,
+  .Battery_Main,
+  .Camera_Main,
+  .Water_Main,
+  .Environment_Main {
+    flex-basis: 100%;
+  }
 }
