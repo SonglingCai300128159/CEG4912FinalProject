@@ -1,0 +1,21 @@
+.text{
+    color:white;
+}
+.data{
+    color:aquamarine;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute the components evenly */
+    align-items: center; /* Center items vertically */
+  
+    /* Adjust spacing if needed */
+    gap: 10px; /* Adds space between components */
+  }
+  
+  .temperature,
+  .humidity,
+  .air_condition {
+    flex: 1; /* Make the components flexible and take equal space */
+    text-align: center; /* Center the content within each component */
+  }

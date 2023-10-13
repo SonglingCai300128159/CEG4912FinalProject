@@ -1,6 +1,10 @@
 function CAMERA_MAIN() {
     return (
-        <h3>camera</h3>
+        <div>
+           
+            <h3>Monitoring System On</h3>
+        </div>
+       
       
     );
 };
