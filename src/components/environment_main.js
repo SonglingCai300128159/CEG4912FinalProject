@@ -31,7 +31,7 @@ const ENVIRONMENT_MAIN =()=>{
                             <div className='text'>CO2: </div>
                             <div className='data'>10</div>
                         </div>
-                        <div className='PM2.5_data'>
+                        <div className='PM25_data'>
                             <div className='text'>PM2.5: </div>
                             <div className='data'>10</div>
                         </div>
