@@ -1,0 +1,15 @@
+.text{
+    color:white;
+}
+.container {
+    display: flex;
+    justify-content: center; /* 在水平方向上居中对齐 */
+    align-items: center; 
+  }
+.status{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
