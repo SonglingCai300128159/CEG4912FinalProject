@@ -8,7 +8,35 @@
 
   padding: 20px;
 }
-
+:root{
+  --color1: #00ffff;
+  --color2: #10d863;
+  --color3: #df850f;
+}
+.circleBackendWater{
+  fill:none;
+  stroke: #b9b8c9;
+}
+.circleBackendBattery{
+  fill:none;
+  stroke: #fefeff;
+}
+.circleMonitorWater{
+  fill: none;
+  stroke: var(--color1);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.WaterText{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.circleMonitorBattery{
+  fill: none;
+  stroke: var(--color2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .title {
   background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
   border-radius: 10px; /* 圆角边缘 */
