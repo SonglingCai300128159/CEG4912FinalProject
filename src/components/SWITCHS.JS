@@ -1,5 +1,6 @@
 import FUNCTION_BAR from "./FUNCTION_BAR";
 import React from 'react';
+import './App.css';
 import { BrowserRouter as Router ,Switch, Route } from "react-router-dom";
 import Battery_detail from './pages/Battery_detail';
 import Water_detail from './pages/Battery_detail';
