@@ -28,5 +28,14 @@ export const function_BarData =[
         path: '/camera',
         icon: <AiIcons.AiFillVideoCamera/>,
         className:'nav-text',
-    }
+    },
+    /*
+    
+    {
+        title: 'Home',
+        path: '/',
+        /*icon: <AiIcons.AiFillVideoCamera/>,
+        className:'nav-text',
+    }*/
+
 ]

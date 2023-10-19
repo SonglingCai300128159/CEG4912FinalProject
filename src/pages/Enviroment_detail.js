@@ -1,12 +1,14 @@
 import React from 'react'
+import './Enviroment_detail.css'
+//import FUNCTION_BAR from '../components/FUNCTION_BAR'
 
 function Enviroment_detail() {
   return (
     <div>
-      <h1>
-        AC controll !!!
-      </h1>
+      
+    <div className='actxt'>AC controll !!!</div>
     </div>
+    
   )
 }
 

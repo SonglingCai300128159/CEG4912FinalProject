@@ -5,9 +5,6 @@ import WATER_MAIN from './components/WATER_MAIN';
 import ENVIRONMENT_MAIN from './components/ENVIRONMENT_MAIN';
 import BATTERY_MAIN from './components/BATTERY_MAIN';
 import FUNCTION_BAR from './components/FUNCTION_BAR';
-import { BrowserRouter as Router ,Switch, Route } from "react-router-dom";
-import SWITCHS from './components/SWITCHS.JS';
-/*import { BrowserRouter as Router, Switch,Route  } from 'react-router-dom';*/
 
 function App() {
   
@@ -20,7 +17,7 @@ function App() {
         <article className="Function_Bar">
           
           <div>
-              <FUNCTION_BAR/>
+            <FUNCTION_BAR/>
           </div>
         </article>
         <article className="Battery_Main">
