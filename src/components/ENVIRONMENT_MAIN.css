@@ -1,0 +1,32 @@
+.text{
+    color:white;
+}
+.data{
+    color:aquamarine;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute the components evenly */
+    align-items: center; /* Center items vertically */
+  
+    /* Adjust spacing if needed */
+    gap: 10px; /* Adds space between components */
+  }
+
+.temperature_data,
+.humidity_data,
+.CO2_data,
+.PM25_data {
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+}
+
+/* 媒体查询，当屏幕宽度小于某个阈值时切换为垂直布局 */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* 切换为垂直布局 */
+      align-items: flex-start; /* 调整垂直布局的对齐方式 */
+    }
+
+
+  }

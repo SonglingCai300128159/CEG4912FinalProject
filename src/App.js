@@ -5,6 +5,7 @@ import WATER_MAIN from './components/water_main';
 import ENVIRONMENT_MAIN from './components/environment_main';
 import BATTERY_MAIN from './components/battery_main';
 import FUNCTION_BAR from './components/function_bar';
+/*import { Button } from 'react-bootstrap';*/
 
 function App() {
   

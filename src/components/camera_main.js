@@ -1,6 +1,16 @@
+import './CAMERA_MAIN.css'
+import cam_icon from './Assets/icons8-camera-64.png'
+
 function CAMERA_MAIN() {
     return (
-        <h3>camera</h3>
+        <div className="container">
+            <div className='status'>
+                <div><img src={cam_icon} alt='' className='icon' /></div>
+                <div className='text'>Monitoring Started</div>
+            </div>
+            
+        </div>
+       
       
     );
 };

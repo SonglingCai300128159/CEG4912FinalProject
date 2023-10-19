@@ -1,0 +1,6 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: auto;
+    height: 100vh;}

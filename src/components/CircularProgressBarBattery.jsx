@@ -9,7 +9,7 @@ const dashOffset= dashArray-(dashArray*percentage) /100;
     <div>
         <svg 
             width={circleWidth} 
-            height={circleWidth} 
+           height={circleWidth} 
             viewBox={`0 0 ${circleWidth} ${circleWidth}`}>
         <circle cx={circleWidth / 2}cy={circleWidth/2} 
         strokeWidth="15px" r={radius} className='circleBackendBattery'></circle>

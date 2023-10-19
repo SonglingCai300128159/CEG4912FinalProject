@@ -13,6 +13,8 @@ function WATER_MAIN() {
               step="1" value={percentage} onChange={(ev)=>setPercentage(ev.target.value)} />
         </div>
     );
+
+    
 };
 
 export default WATER_MAIN;
