@@ -1,10 +1,11 @@
 import './App.css';
-import TITLE from "./components/TITLE";
-import CAMERA_MAIN from './components/CAMERA_MAIN';
-import WATER_MAIN from './components/WATER_MAIN';
-import ENVIRONMENT_MAIN from './components/ENVIRONMENT_MAIN';
-import BATTERY_MAIN from './components/BATTERY_MAIN';
-import FUNCTION_BAR from './components/FUNCTION_BAR';
+import TITLE from "./components/Title";
+import CAMERA_MAIN from './components/camera_main';
+import WATER_MAIN from './components/water_main';
+import ENVIRONMENT_MAIN from './components/environment_main';
+import BATTERY_MAIN from './components/battery_main';
+import FUNCTION_BAR from './components/function_bar';
+/*import { Button } from 'react-bootstrap';*/
 
 function App() {
   

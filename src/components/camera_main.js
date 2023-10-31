@@ -1,4 +1,4 @@
-import './CAMERA_MAIN.css'
+import './camera_main.css'
 import cam_icon from './Assets/icons8-camera-64.png'
 
 function CAMERA_MAIN() {

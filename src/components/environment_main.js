@@ -4,13 +4,13 @@ import humidity_icon from './Assets/icons8-humidity-50.png'
 import air_icon from './Assets/icons8-air-50.png'
 const ENVIRONMENT_MAIN =()=>{
     return(
-        <div>
+        
             <div className='container'>
                 <div className='temperature'>
                     <div>
                         <img src={tem_icon} alt='' className='icon' />
                         <div className='temperature_data'>
-                            <div className='text'>Temperature: </div>
+                            <div className='text'>Temp: </div>
                             <div className='data'>10°C</div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const ENVIRONMENT_MAIN =()=>{
                     </div>
                 </div>
             </div>
-        </div>
+        
     )
 }
 
