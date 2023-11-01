@@ -10,7 +10,7 @@
     align-items: center; /* Center items vertically */
     flex-wrap: wrap;
     /* Adjust spacing if needed */
-    gap: 10px; /* Adds space between components */
+    gap: 20px; /* Adds space between components */
   }
 
 .temperature_data,
