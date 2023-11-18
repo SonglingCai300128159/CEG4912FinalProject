@@ -3,11 +3,10 @@
 .app {
   display: flex;
   flex-direction: column;
- 
   align-items: center;
   height: 100vh;
-  padding: 20px;
   color: #ffffff;
+  padding-inline: 20px;
 }
 
 :root{
@@ -47,16 +46,25 @@
   margin-bottom: 20px; /* 底部边距 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
   text-align: center;
+  margin-top: 20px;
 }
 
-.content {
+.content{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap; /* 允许子元素换行 */
   gap: 20px; /* 子元素之间的间距 */
   width: 100%;
 }
-
+.all_components {
+  flex:1;
+  display: flex;
+  flex-wrap: wrap; /* 允许子元素换行 */
+  gap: 20px; /* 子元素之间的间距 */
+}
+.sideBar{
+  flex:0.25;
+}
 .Function_Bar,
 .Battery_Main,
 .Camera_Main,
@@ -71,20 +79,20 @@
   backdrop-filter: blur(10px); /* 添加模糊效果 */
   opacity: 0.9; /* 降低块的不透明度 */
 }
-
-@media (max-width: 768px) {
-  /* 在小屏幕上，每行显示两个模块 */
+/*
+@media (max-width: 2000px) {
+  
   .Function_Bar,
   .Battery_Main,
   .Camera_Main,
   .Water_Main,
   .Environment_Main {
-    flex-basis: calc(50% - 10px); /* 50%减去间距 */
+    flex-basis: calc(50% - 10px); 
   }
 }
 
 @media (max-width: 480px) {
-  /* 在更小的屏幕上，每行显示一个模块 */
+  
   .Function_Bar,
   .Battery_Main,
   .Camera_Main,
@@ -92,5 +100,6 @@
   .Environment_Main {
     flex-basis: 100%;
   }
-}
 
+}
+*/

@@ -1,20 +1,19 @@
 import CircularProgressBarWater from './CircularProgressBarWater';
-import { useState } from 'react';
-function WATER_MAIN() {
-    const [percentage, setPercentage] = useState(35);
-    return (
-        <div>
-            <h2>Water Tank</h2>
-            <CircularProgressBarWater percentage={percentage} circleWidth="200" />
-            <input 
-              type="range" 
-              min="0" 
-              max="100" 
-              step="1" value={percentage} onChange={(ev)=>setPercentage(ev.target.value)} />
-        </div>
-    );
+import React, { useContext, useEffect } from 'react';
+import { useData } from './DataContext';
 
-    
+const WATER_MAIN = () => {
+  const { waterPercentage } = useData();
+
+  return (
+    <div>
+      <h2>Water Tank</h2>
+      <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
+      <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
+      <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
+    </div>
+  );
 };
 
 export default WATER_MAIN;
+

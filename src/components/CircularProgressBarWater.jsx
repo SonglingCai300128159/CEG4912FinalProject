@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CircularProgressBarWater = ({percentage, circleWidth}) => {
+const CircularProgressBarWater = ({waterPercentage, circleWidth}) => {
 const radius = 85;
 const dashArray= radius* Math.PI * 2;
-const dashOffset= dashArray-(dashArray*percentage) /100;
+const dashOffset= dashArray-(dashArray*waterPercentage) /100;
 
   return (
     <div>
@@ -22,7 +22,7 @@ const dashOffset= dashArray-(dashArray*percentage) /100;
         transform={`rotate(-90 ${circleWidth / 2} ${circleWidth / 2})`}
         >
         </circle>
-        <text x="50%" y="50%" dy= "0.3em" textAnchor='middle' className='WaterText'>{percentage}%</text> 
+        <text x="50%" y="50%" dy= "0.3em" textAnchor='middle' className='WaterText'>{waterPercentage}%</text> 
 
 
 

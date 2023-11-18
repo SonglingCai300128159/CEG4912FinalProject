@@ -1,36 +1,38 @@
 import React from 'react';
 import'./Function_BarData.css';
-import styled from 'styled-components';
+//import styled from 'styled-components';
 import fan_ic from "./Assets/im_fan_100.png";
-import water_ic from "./Assets/im_water.png";
+//import water_ic from "./Assets/im_water.png";
 import camera_ic from "./Assets/im_camera.png";
-import battery_ic from "./Assets/im_battery.png";
-
+//import battery_ic from "./Assets/im_battery.png";
+import control_ic from "./Assets/icons-control-50.png"
 export const function_BarData =[
     {
         title: '',
-        path: '/fans',
-        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><div>Fan</div></div>,
+        path: '/air',
+        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><div className='btnname'>Air</div></div>,
         className:'navtext',
         TextColor:'white',
         
     },
+    /*
     {
         title: '',
         path: '/water-tank',
-        icon: <div className='ic'><img src={water_ic} alt='' className='icon' /><div>Water</div></div>,
+        icon: <div className='ic'><img src={water_ic} alt='' className='icon' /><div className='btnname'>Water</div></div>,
         className:'navtext',
     },
+    */
     {
         title: '',
-        path: '/battery',
-        icon: <div className='ic'><img src={battery_ic} alt='' className='icon' /><div>Battery</div></div>,
+        path: '/control',
+        icon: <div className='ic'><img src={control_ic} alt='' className='icon' /><div className='btnname'>Control</div></div>,
         className:'navtext',
     },
     {
         title: '',
         path: '/camera',
-        icon: <div className='ic'><img src={camera_ic} alt='' className='icon' /><div>Camera</div></div>,
+        icon: <div className='ic'><img src={camera_ic} alt='' className='icon' /><div className='btnname'>Camera</div></div>,
         className:'navtext',
     },
     /*

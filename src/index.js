@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     element: <App/>,
   },
   {
-    path: "fans",
+    path: "air",
     element: <Enviroment_detail/>,
   },
   {
-    path: "Battery",
+    path: "control",
     element: <Battery_detail/>,
   },
   {
