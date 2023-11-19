@@ -1,0 +1,40 @@
+#indoor_btn{
+    background-color: rgba(255, 250, 250, 0.5);
+    border-style: solid;
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    }
+.furniture{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.control_content{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* 允许子元素换行 */
+  gap: 20px; /* 子元素之间的间距 */
+  width: 80%;
+}
+
+
+  .logo_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px
+  }
+  .logo_name{
+    text-align: center;
+  }
+
+ 

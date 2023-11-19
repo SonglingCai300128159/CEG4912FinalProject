@@ -8,6 +8,7 @@ border-radius: 40px;
 border-color: rgba(255, 255, 255, 0.5);
 cursor: pointer;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+width: 100%;
 }
 .link{
 text-decoration: none;
@@ -28,9 +29,12 @@ gap: 10px;
 text-align: center;
 margin-bottom: 10px;
 margin-right: 10px;
+
 }
 
 .ic{
   padding-inline: 20px;
 }
-
+.container {
+  overflow: auto; /* 或 overflow: hidden; */
+}

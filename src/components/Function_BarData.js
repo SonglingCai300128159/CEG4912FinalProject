@@ -10,7 +10,7 @@ export const function_BarData =[
     {
         title: '',
         path: '/air',
-        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><div className='btnname'>Air</div></div>,
+        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><div className='btnname'>Environment</div></div>,
         className:'navtext',
         TextColor:'white',
         
@@ -26,7 +26,11 @@ export const function_BarData =[
     {
         title: '',
         path: '/control',
-        icon: <div className='ic'><img src={control_ic} alt='' className='icon' /><div className='btnname'>Control</div></div>,
+        icon: 
+            <div className='ic'>
+                <img src={control_ic} alt='' className='icon' />
+                <div className='btnname'>Indoor Control</div>
+            </div>,
         className:'navtext',
     },
     {

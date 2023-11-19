@@ -9,7 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Enviroment_detail from './pages/Enviroment_detail';
-import Battery_detail from './pages/Battery_detail';
+import Control_detail from './pages/Control_detail';
 import Camera_detail from './pages/Camera_detail';
 import Water_detail from './pages/Water_detail';
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "control",
-    element: <Battery_detail/>,
+    element: <Control_detail/>,
   },
   {
     path: "water-tank",

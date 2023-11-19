@@ -8,7 +8,7 @@ import FUNCTION_BAR from './components/function_bar';
 import homeicon from './components/Assets/icons8-shield-64.png'
 /*import { Button } from 'react-bootstrap';*/
 import { DataProvider } from './components/DataContext';
-
+import Switch from './pages/switch'
 function App() {
   
   return (
