@@ -20,7 +20,7 @@ npm install styled-components
 
 npm install rsuite
 
-
+for server, before run app.py, add "pip install Flask Flask-CORS" in terminal
 
 
 use npm start to boot local webapp
