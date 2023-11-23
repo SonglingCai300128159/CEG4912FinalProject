@@ -13,6 +13,7 @@ import Battery_detail from './pages/Battery_detail';
 import Camera_detail from './pages/Camera_detail';
 import Water_detail from './pages/Water_detail';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
