@@ -10,7 +10,7 @@ const WATER_MAIN = () => {
       <h2>Water Tank</h2>
       <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
       <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
-      <CircularProgressBarWater waterPercentage={waterPercentage} circleWidth="200" />
+      
     </div>
   );
 };

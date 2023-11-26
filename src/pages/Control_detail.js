@@ -5,6 +5,7 @@ import '../pages/Control_detail.css'
 import Switch from '../pages/switch'
 import {  Link } from 'react-router-dom'
 import ic_home from '../components/Assets/icon-house.png'
+import first_floor from '../components/Assets/first_floor.jpg'
 const Control_detail = () => {
   
   return (
@@ -46,7 +47,16 @@ const Control_detail = () => {
               <div className='logo_name'><h3>Bed</h3></div>
           </div>
         </section>
-        <section className='LED'></section>
+        <section className='LED'>
+        <div id='indoor_btn'>
+              <div className='logo_btn'>
+                <div>
+                  <img src={ic_curtain} alt=''></img>
+                </div>
+                <Switch />
+              </div>
+          </div>
+        </section>
       </div>
     </div>
   );

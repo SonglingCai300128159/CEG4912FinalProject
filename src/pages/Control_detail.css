@@ -1,5 +1,5 @@
 #indoor_btn{
-    background-color: rgba(255, 250, 250, 0.5);
+    background-color: rgba(40, 44, 63, 0.7);
     border-style: solid;
     color: white;
     font-size: 15px;
@@ -36,5 +36,8 @@
   .logo_name{
     text-align: center;
   }
-
- 
+  .LED{
+    background-image: url('../components/Assets/first_floor.jpg');
+    width: 320px;
+    background-size: 100% 100%;
+  }
