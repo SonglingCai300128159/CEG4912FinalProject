@@ -37,7 +37,7 @@
     text-align: center;
   }
   .LED{
-    background-image: url('../components/Assets/first_floor.jpg');
+    background-image: url('../components/Assets/floor.png');
     width: 320px;
     background-size: 100% 100%;
   }
