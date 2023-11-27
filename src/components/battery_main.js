@@ -5,8 +5,8 @@ const BATTERY_MAIN = () => {
   const {batteryPercentage,fetchData} = useData();
   
   return (
-    <div>
-      <h2>Battery</h2>
+    <div id='batterycmp'>
+      <h2 className='BWTitle'>Battery</h2>
       <CircularProgressBarBattery batteryPercentage={batteryPercentage} circleWidth="200" />
     </div>
   );

@@ -1,11 +1,33 @@
-import React, { useState } from 'react';
-import '../pages/Switch.css'; 
+import React, { useState, useEffect } from 'react';
+import '../pages/Switch.css';
 
-const Switch = () => {
+const Switch = ({ serialNumber }) => {
   const [isOn, setIsOn] = useState(false);
 
-  const handleToggle = () => {
-    setIsOn((prev) => !prev);
+  useEffect(() => {
+    const fetchInitialStatus = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/light-status/${serialNumber}`);
+        const data = await response.json();
+        setIsOn(data.light_status);
+      } catch (error) {
+        console.error('Error fetching initial light status:', error);
+      }
+    };
+
+    fetchInitialStatus();
+  }, [serialNumber]);
+
+  const handleToggle = async () => {
+    try {
+      const response = await fetch(`http://localhost:5000/api/toggle-light/${serialNumber}`, {
+        method: 'POST',
+      });
+      const data = await response.json();
+      setIsOn(data.light_status);
+    } catch (error) {
+      console.error('Error toggling light:', error);
+    }
   };
 
   return (

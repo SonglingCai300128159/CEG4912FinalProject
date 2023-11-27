@@ -48,7 +48,12 @@
   text-align: center;
   margin-top: 20px;
 }
-
+.BWTitle{
+  text-align: center;
+}
+#batterycmp{
+  text-align: center;
+}
 .content{
   display: flex;
   flex-direction: row;
