@@ -7,14 +7,14 @@ export const useData = () => {
 };
 
 export const DataProvider = ({ children }) => {
-  const [temperatureData, setTemperatureData] = useState(null);
-  const [humidityData, setHumidityData] = useState(null);
-  const [co2Data, setCO2Data] = useState(null);
-  const [pm25Data, setPM25Data] = useState(null);
-  const [BlackwaterPercentage, setBlackWaterPercentage] = useState(null);
-  const [batteryPercentage, setBatteryPercentage] = useState(null);
-  const [CleanwaterPercentage, setCleanWaterPercentage] = useState(null);
-  const [GreywaterPercentage, setGreyWaterPercentage] = useState(null);
+  const [temperatureData, setTemperatureData] = useState(23.8);
+  const [humidityData, setHumidityData] = useState(45);
+  const [co2Data, setCO2Data] = useState(6);
+  const [pm25Data, setPM25Data] = useState(11);
+  const [BlackwaterPercentage, setBlackWaterPercentage] = useState(20);
+  const [batteryPercentage, setBatteryPercentage] = useState(40);
+  const [CleanwaterPercentage, setCleanWaterPercentage] = useState(50);
+  const [GreywaterPercentage, setGreyWaterPercentage] = useState(35);
   const apiUrl = 'http://127.0.0.1:5000/api/temperature-data';
 
   const fetchData = () => {

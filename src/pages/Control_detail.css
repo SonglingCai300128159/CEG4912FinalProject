@@ -19,11 +19,11 @@
 
 
 .control_content{
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* 允许子元素换行 */
   gap: 20px; /* 子元素之间的间距 */
-  width: 80%;
+  justify-content:space-around;
 }
 
 
@@ -37,7 +37,9 @@
     text-align: center;
   }
   .LED{
-    background-image: url('../components/Assets/floor.png');
-    width: 320px;
-    background-size: 100% 100%;
+   display: flex;
+   flex:0.5;
+   align-content: space-around;
+   flex-wrap: wrap;
+   gap:20px;
   }

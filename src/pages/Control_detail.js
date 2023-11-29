@@ -6,6 +6,7 @@ import Switch from '../pages/switch'
 import {  Link } from 'react-router-dom'
 import ic_home from '../components/Assets/icon-house.png'
 import first_floor from '../components/Assets/first_floor.jpg'
+import ic_light from '../components/Assets/icons-light-50.png'
 const Control_detail = () => {
   
   return (
@@ -24,37 +25,83 @@ const Control_detail = () => {
                 <div>
                   <img src={ic_curtain} alt=''></img>
                 </div>
-                <Switch serialNumber={0}/>
+                <Switch serialNumber={6}/>
               </div>
-              <div className='logo_name'><h3>Curtain</h3></div>
+              <div className='logo_name'><h3>Curtain1</h3></div>
           </div>
           <div id='indoor_btn'>
               <div className='logo_btn'>
                 <div>
                   <img src={ic_curtain} alt=''></img>
                 </div>
-                <Switch serialNumber={1}/>
+                <Switch serialNumber={7}/>
               </div>
-              <div className='logo_name'><h3>Curtain</h3></div>
+              <div className='logo_name'><h3>Curtain2</h3></div>
           </div>
           <div id='indoor_btn'>
               <div className='logo_btn'>
                 <div>
                   <img src={ic_bed} alt=''></img>
                 </div>
-                <Switch serialNumber={2}/>
+                <Switch serialNumber={8}/>
               </div>
               <div className='logo_name'><h3>Bed</h3></div>
           </div>
         </section>
         <section className='LED'>
-        <div id='indoor_btn'>
-              <div className='logo_btn'>
-                <div>
-                  <img src={ic_curtain} alt=''></img>
-                </div>
-                <Switch serialNumber={4}/>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
               </div>
+                <Switch serialNumber={0}/>
+            </div>
+            <div className='logo_name'><h3>Light1</h3></div>
+          </div>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
+              </div>
+                <Switch serialNumber={1}/>
+            </div>
+            <div className='logo_name'><h3>Light2</h3></div>
+          </div>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
+              </div>
+                <Switch serialNumber={2}/>
+            </div>
+            <div className='logo_name'><h3>Light3</h3></div>
+          </div>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
+              </div>
+                <Switch serialNumber={3}/>
+            </div>
+            <div className='logo_name'><h3>Light4</h3></div>
+          </div>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
+              </div>
+                <Switch serialNumber={4}/>
+            </div>
+            <div className='logo_name'><h3>Light5</h3></div>
+          </div>
+          <div id='indoor_btn'>
+            <div className='logo_btn'>
+              <div>
+                <img src={ic_light} alt=''></img>
+              </div>
+                <Switch serialNumber={5}/>
+            </div>
+            <div className='logo_name'><h3>Light6</h3></div>
           </div>
         </section>
       </div>

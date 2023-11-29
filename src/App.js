@@ -14,39 +14,25 @@ function App() {
   return (
     <DataProvider>
       <div className="app">
-      <header className="title">
-        <TITLE />
-        <button></button>
-      </header>
-      <section className="content">
-        <section className='sideBar'>
-          <article className="Function_Bar">
-            <div>
-              <FUNCTION_BAR />
-            </div>
-          </article>
-        </section>
-        
-        <section className='all_components'>
-          <article className="Battery_Main">
-            <div >
-              <BATTERY_MAIN />
-            </div>
-          </article>
+        <header className="title">
+          <TITLE />
+          <button></button>
+        </header>
+        <section className="content">
+          <section className="Function_Bar">
+            <FUNCTION_BAR />
+          </section>
+          <section className="Battery_Main">
+            <BATTERY_MAIN />
+          </section>
+          <section className="Water_Main">
+            <WATER_MAIN />
+          </section>
+          <section className="Environment_Main">
+            <ENVIRONMENT_MAIN />
+          </section>
           
-          <article className="Water_Main">
-            <div >
-              <WATER_MAIN />
-            </div>
-          </article>
-          <article className="Environment_Main">
-            <div>
-              <ENVIRONMENT_MAIN />
-            </div>
-          </article>
         </section>
-        
-      </section>
       </div>
     </DataProvider>
     

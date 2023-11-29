@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   color: #ffffff;
-  padding-inline: 20px;
 }
 
 :root{
@@ -53,36 +51,30 @@
 }
 #batterycmp{
   text-align: center;
+  align-items: center;
 }
 .content{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-  width: 100%;
-}
-.all_components {
-  flex:1;
-  display: flex;
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-}
-.sideBar{
-  flex:0.25;
+  gap: 30px; /* 子元素之间的间距 */
+  justify-content: space-around;
 }
 .Function_Bar,
 .Battery_Main,
 .Camera_Main,
 .Water_Main,
 .Environment_Main {
-  flex: 1; /* 让模块自动增长 */
   background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
   border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-  min-width: 200px; /* 设置最小宽度 */
+  min-width: 300px; /* 设置最小宽度 */
   backdrop-filter: blur(10px); /* 添加模糊效果 */
   opacity: 0.9; /* 降低块的不透明度 */
+  display: flex;
+  justify-content: center;
+  align-self:flex-start;
 }
 /*
 @media (max-width: 2000px) {
@@ -123,11 +115,12 @@
 .page_header{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .page_layout{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   height: 100vh;
   color: #ffffff;
   padding-inline: 20px;
