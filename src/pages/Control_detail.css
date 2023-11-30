@@ -3,7 +3,7 @@
     border-style: solid;
     color: white;
     font-size: 15px;
-    padding: 10px 30px;
+    padding: 4px 30px;
     border-radius: 40px;
     border-color: rgba(255, 255, 255, 1);
     cursor: pointer;
@@ -24,6 +24,7 @@
   flex-wrap: wrap; /* 允许子元素换行 */
   gap: 20px; /* 子元素之间的间距 */
   justify-content:space-around;
+  align-items: center;
 }
 
 
@@ -39,7 +40,13 @@
   .LED{
    display: flex;
    flex:0.5;
-   align-content: space-around;
+   align-content: center;
    flex-wrap: wrap;
    gap:20px;
   }
+#arm{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:20px;
+}

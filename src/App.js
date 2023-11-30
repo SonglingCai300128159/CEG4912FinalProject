@@ -16,7 +16,6 @@ function App() {
       <div className="app">
         <header className="title">
           <TITLE />
-          <button></button>
         </header>
         <section className="content">
           <section className="Function_Bar">

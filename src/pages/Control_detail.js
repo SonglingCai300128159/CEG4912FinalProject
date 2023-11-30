@@ -7,6 +7,8 @@ import {  Link } from 'react-router-dom'
 import ic_home from '../components/Assets/icon-house.png'
 import first_floor from '../components/Assets/first_floor.jpg'
 import ic_light from '../components/Assets/icons-light-50.png'
+import Button from '../pages/Button'
+import icon_arm from '../components/Assets/icon-arm-50.png'
 const Control_detail = () => {
   
   return (
@@ -102,6 +104,56 @@ const Control_detail = () => {
                 <Switch serialNumber={5}/>
             </div>
             <div className='logo_name'><h3>Light6</h3></div>
+          </div>
+        </section>
+        <section id='arm'>
+          <div id='arm1'>
+            <div id='indoor_btn'>
+              <div className='logo_btn'>
+                <div>
+                  <img src={icon_arm} alt=''></img>
+                </div>
+                  <Button>Up</Button>
+                  <Button>Down</Button>
+              </div>
+              <div className='logo_name'><h3>Suspension 1</h3></div>
+            </div>
+          </div>
+          <div id='arm2'>
+            <div id='indoor_btn'>
+              <div className='logo_btn'>
+                <div>
+                  <img src={icon_arm} alt=''></img>
+                </div>
+                <Button>Up</Button>
+                <Button>Down</Button>
+              </div>
+              <div className='logo_name'><h3>Suspension 2</h3></div>
+            </div>
+          </div>
+          <div id='arm3'>
+            <div id='indoor_btn'>
+              <div className='logo_btn'>
+                <div>
+                  <img src={icon_arm} alt=''></img>
+                </div>
+                <Button>Up</Button>
+                <Button>Down</Button>
+              </div>
+              <div className='logo_name'><h3>Suspension 3</h3></div>
+            </div>
+          </div>
+          <div id='arm4'>
+            <div id='indoor_btn'>
+              <div className='logo_btn'>
+                <div>
+                  <img src={icon_arm} alt=''></img>
+                </div>
+                <Button>Up</Button>
+                <Button>Down</Button>
+              </div>
+              <div className='logo_name'><h3>Suspension 4</h3></div>
+            </div>
           </div>
         </section>
       </div>

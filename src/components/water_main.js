@@ -1,4 +1,3 @@
-import CircularProgressBarWater from './CircularProgressBarWater';
 import { useState } from 'react';
 import React from 'react';
 import'./watermain.css';
@@ -10,7 +9,7 @@ const WATER_MAIN = () =>{
     return (
       <div id='watercmp'>
        
-       <h2 className='BWTitle'>Water System</h2>
+       <h3 className='BWTitle'>Water System</h3>
         <div id='watercontent'>
             <div class="watercircle" style={{
             background: `linear-gradient(#84adc8 ${100-CleanwaterPercentage}%, #1f3b6e ${100-CleanwaterPercentage+10}%)`,

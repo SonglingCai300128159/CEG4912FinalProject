@@ -7,10 +7,11 @@ export const useData = () => {
 };
 
 export const DataProvider = ({ children }) => {
-  const [temperatureData, setTemperatureData] = useState(23.8);
-  const [humidityData, setHumidityData] = useState(45);
-  const [co2Data, setCO2Data] = useState(6);
-  const [pm25Data, setPM25Data] = useState(11);
+  const [temperatureData, setTemperatureData] = useState();
+  const [humidityData, setHumidityData] = useState();
+  const [co2Data, setCO2Data] = useState();
+  const [pm25Data, setPM25Data] = useState();
+  const [pm10Data, setPM10Data] = useState();
   const [BlackwaterPercentage, setBlackWaterPercentage] = useState(20);
   const [batteryPercentage, setBatteryPercentage] = useState(40);
   const [CleanwaterPercentage, setCleanWaterPercentage] = useState(50);
@@ -25,6 +26,7 @@ export const DataProvider = ({ children }) => {
         setHumidityData(data.humidityData);
         setCO2Data(data.co2Data);
         setPM25Data(data.pm25Data);
+        setPM10Data(data.pm10Data);
         setBatteryPercentage(data.batteryPercentage);
         setBlackWaterPercentage(data.BlackwaterPercentage);
         setCleanWaterPercentage(data.CleanwaterPercentage);
@@ -51,6 +53,7 @@ export const DataProvider = ({ children }) => {
         humidityData,
         co2Data,
         pm25Data,
+        pm10Data,
         batteryPercentage,
         CleanwaterPercentage,
         BlackwaterPercentage,

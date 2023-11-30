@@ -1,0 +1,15 @@
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+    border-radius: 40px;
+    color: rgb(47, 47, 77);
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .custom-button.pressed {
+    background-color: rgb(48, 50, 68);  
+  }

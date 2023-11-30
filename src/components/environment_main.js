@@ -5,9 +5,11 @@ import humidity_icon from './Assets/icons8-humidity-50.png';
 import air_icon from './Assets/icons8-air-50.png';
 import { useData } from './DataContext';
 import cam_icon from './Assets/icons8-camera-64.png'
+import ic_warning from './Assets/icons8-danger-96.png'
 import Switch from '../pages/switch';
+
 const ENVIRONMENT_MAIN = () => {
-    const { temperatureData, humidityData, co2Data, pm25Data } = useData();
+    const { temperatureData, humidityData, pm10Data, pm25Data } = useData();
 
     return(
         
@@ -34,9 +36,9 @@ const ENVIRONMENT_MAIN = () => {
                     <div className='air_condition'>
                         <div>
                             <img src={air_icon} alt='' className='icon' />
-                            <div className='CO2_data'>
+                            <div className='PM10_data'>
                                 <div className='text'>PM10: </div>
-                                <div className='data'>{co2Data}</div>
+                                <div className='data'>{pm10Data}</div>
                             </div>
                             <div className='PM25_data'>
                                 <div className='text'>PM2.5: </div>
@@ -53,7 +55,13 @@ const ENVIRONMENT_MAIN = () => {
                     <div id='monitor_content'>
                         <Switch />
                     </div>
-                    
+                    <div id='warning'>
+                        <img src={ic_warning} id='img_warning'></img>
+                        <h3>Detect: Human</h3>
+                    </div>
+                </div>
+                <div className='vehicle'>
+
                 </div>
             </div>
             

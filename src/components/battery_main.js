@@ -7,7 +7,7 @@ const BATTERY_MAIN = () => {
   
   return (
     <div id='batterycmp'>
-      <h2 className='BWTitle'>Battery</h2>
+      <h3 className='BWTitle'>Battery</h3>
       <CircularProgressBarBattery batteryPercentage={batteryPercentage} circleWidth="200" />
     </div>
   );

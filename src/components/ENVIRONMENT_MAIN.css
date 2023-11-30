@@ -26,7 +26,7 @@ gap:20px;
 
 .temperature_data,
 .humidity_data,
-.CO2_data,
+.PM10_data,
 .PM25_data {
   display: flex; /* 使用 Flexbox 布局 */
   align-items: center; /* 垂直居中对齐 */
@@ -55,4 +55,12 @@ gap:20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+#img_warning{
+  height: 40px;
+}
+#warning{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
