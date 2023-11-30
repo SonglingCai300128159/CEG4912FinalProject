@@ -20,6 +20,8 @@ npm install styled-components
 
 npm install rsuite
 
+npm install react-thermometer-component
+
 for server, before run app.py, add "pip install Flask Flask-CORS" in terminal
 
 
