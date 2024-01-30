@@ -3,7 +3,7 @@ background-color: rgba(255, 250, 250, 0.2);
 border-style: solid;
 color: white;
 font-size: 15px;
-padding: 10px 60px;
+padding: 15px 60px;
 border-radius: 40px;
 border-color: rgba(255, 255, 255, 0.5);
 cursor: pointer;
@@ -12,6 +12,7 @@ width: 100%;
 }
 .link{
 text-decoration: none;
+color: rgb(255, 255, 255);
 align-items: center;
 display: inline-block;
 width: 100%;
@@ -20,25 +21,26 @@ width: 100%;
 color: rgb(255, 255, 255);
 }
 
-.divider{
-margin-bottom: 5px;
-display: flex;
-}
 .navtext {
-gap: 10px;
 text-align: center;
-margin-bottom: 10px;
-margin-right: 10px;
-
+margin-bottom: 20px;
+margin-right: 20px;
 }
 
 .ic{
   padding-inline: 20px;
 }
 .container {
-  overflow: auto; /* 或 overflow: hidden; */
+  overflow: auto; 
 }
-a:link {
+.link:hover{
   color: white; 
   text-decoration: none; 
+}
+.custombtn:hover{
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+.btnname{
+
 }

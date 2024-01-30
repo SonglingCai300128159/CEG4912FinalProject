@@ -12,33 +12,26 @@ export const function_BarData =[
     {
         title: '',
         path: '/air',
-        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><div className='btnname'>Environment</div></div>,
+        icon: <div className='ic'><img src={fan_ic} alt='' className='icon' /><h4 className='btnname'>Environment</h4></div>,
         className:'navtext',
         TextColor:'white',
         
     },
-    /*
-    {
-        title: '',
-        path: '/water-tank',
-        icon: <div className='ic'><img src={water_ic} alt='' className='icon' /><div className='btnname'>Water</div></div>,
-        className:'navtext',
-    },
-    */
+    
     {
         title: '',
         path: '/control',
         icon: 
             <div className='ic'>
                 <img src={control_ic} alt='' className='icon' />
-                <div className='btnname'>Control</div>
+                <h4 className='btnname'>Control</h4>
             </div>,
         className:'navtext',
     },
     {
         title: '',
         path: '/camera',
-        icon: <div className='ic'><img src={camera_ic} alt='' className='icon' /><div className='btnname'>Camera</div></div>,
+        icon: <div className='ic'><img src={camera_ic} alt='' className='icon' /><h4 className='btnname'>Camera</h4></div>,
         className:'navtext',
     },
     {
@@ -47,17 +40,10 @@ export const function_BarData =[
         icon: 
             <div className='ic'>
                 <img src={ic_info} alt='' className='icon' />
-                <div className='btnname'>User Guide</div>
+                <h4 className='btnname'>User Guide</h4>
             </div>,
         className:'navtext',
     },
-    /*
-    
-    {
-        title: 'Home',
-        path: '/',
-        /*icon: <AiIcons.AiFillVideoCamera/>,
-        className:'nav-text',
-    }*/
+   
 
 ]

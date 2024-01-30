@@ -7,11 +7,11 @@ export const useData = () => {
 };
 
 export const DataProvider = ({ children }) => {
-  const [temperatureData, setTemperatureData] = useState();
-  const [humidityData, setHumidityData] = useState();
-  const [co2Data, setCO2Data] = useState();
-  const [pm25Data, setPM25Data] = useState();
-  const [pm10Data, setPM10Data] = useState();
+  const [temperatureData, setTemperatureData] = useState(23);
+  const [humidityData, setHumidityData] = useState(50);
+  const [co2Data, setCO2Data] = useState(44);
+  const [pm25Data, setPM25Data] = useState(10);
+  const [pm10Data, setPM10Data] = useState(15);
   const [BlackwaterPercentage, setBlackWaterPercentage] = useState(20);
   const [batteryPercentage, setBatteryPercentage] = useState(40);
   const [CleanwaterPercentage, setCleanWaterPercentage] = useState(50);

@@ -5,19 +5,17 @@
     color:aquamarine;
 }
 .env {
-  flex:1;
-    display: flex;
-    justify-content: space-between; /* Distribute the components evenly */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap;
-    /* Adjust spacing if needed */
-    gap: 20px; /* Adds space between components */
+  display: flex;
+  justify-content: space-between; /* Distribute the components evenly */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  gap: 20px; 
   }
 .container{
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 align-content: center;
 text-align: center;
 gap:20px;
@@ -28,18 +26,17 @@ gap:20px;
 .humidity_data,
 .PM10_data,
 .PM25_data {
-  display: flex; /* 使用 Flexbox 布局 */
-  align-items: center; /* 垂直居中对齐 */
+  display: flex; 
+  align-items: center; 
 }
 
 .monitor{
-  flex:1;
   display: flex;
-  background-color: rgba(40, 44, 63, 0.7);
+  background-color: rgba(21, 33, 46, 0.7);
   border-style: solid;
   color: white;
   font-size: 15px;
-  padding: 10px 30px;
+  padding: 10px 10px;
   border-radius: 40px;
   border-color: rgba(255, 255, 255, 1);
   cursor: pointer;

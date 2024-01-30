@@ -3,9 +3,9 @@
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: #ffffff;
   gap: 30px;
+  align-items: center;
 }
 
 :root{
@@ -28,7 +28,7 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.WaterText{
+.BatteryText{
   font-size: 3rem;
   font-weight: bold;
 }
@@ -39,13 +39,11 @@
   stroke-linejoin: round;
 }
 .title {
-  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
-  border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
-  margin-bottom: 20px; /* 底部边距 */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  margin-bottom: 20px; 
   text-align: center;
   margin-top: 20px;
+  width:100%
 }
 .BWTitle{
   text-align: center;
@@ -59,53 +57,37 @@
   justify-content: center;
   align-items: center;
 }
-.content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 30px; /* 子元素之间的间距 */
-  justify-content: space-around;
-}
-.Function_Bar,
+
+.Detect_Main,
 .Battery_Main,
 .Camera_Main,
 .Water_Main,
 .Environment_Main {
-  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
-  border-radius: 10px; /* 圆角边缘 */
+  background: linear-gradient(to bottom, #4e4e53, #1a1919);
+  border-radius: 10px; 
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-  min-width: 300px; /* 设置最小宽度 */
-  backdrop-filter: blur(10px); /* 添加模糊效果 */
-  opacity: 0.9; /* 降低块的不透明度 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  min-width: 300px; 
+  backdrop-filter: blur(10px); 
+  opacity: 0.9; 
   display: flex;
   justify-content: center;
   align-self:flex-start;
+  min-height: 300px;
 }
-/*
-@media (max-width: 2000px) {
-  
-  .Function_Bar,
-  .Battery_Main,
-  .Camera_Main,
-  .Water_Main,
-  .Environment_Main {
-    flex-basis: calc(50% - 10px); 
-  }
-}
-
-@media (max-width: 480px) {
-  
-  .Function_Bar,
-  .Battery_Main,
-  .Camera_Main,
-  .Water_Main,
-  .Environment_Main {
-    flex-basis: 100%;
-  }
+.Function_Bar{
+  background: linear-gradient(to bottom, #4e4e53, #1a1919);
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  min-width: 300px; 
+  backdrop-filter: blur(10px); 
+  opacity: 0.9; 
+  display: flex;
+  justify-content: center;
+  align-self: center;
 
 }
-*/
 .homebtn {
   position: fixed;
   top: 40px;
@@ -126,8 +108,29 @@
 .page_layout{
   display: flex;
   flex-direction: column;
-  
   height: 100vh;
   color: #ffffff;
   padding-inline: 20px;
+}
+.main_content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  gap:30px;
+  justify-content: flex-start;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  gap:15vh;
+}
+.water_content{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.lower_main{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
 }

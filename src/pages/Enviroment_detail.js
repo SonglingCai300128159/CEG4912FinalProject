@@ -27,7 +27,7 @@ const ENVIRONMENT_DETAIL = () => {
             <Thermometer 
             theme="dark" 
             value={temperatureData}
-            max="100"
+            max="50"
             steps="5"
             format="°C" 
             size="large"

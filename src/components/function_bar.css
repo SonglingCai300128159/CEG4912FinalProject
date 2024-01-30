@@ -11,16 +11,15 @@ button.custombtn {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   justify-content: space-between;
-  width: 100%; /* 使用百分比宽度，自动适应父容器的宽度 */
+  width: 100%; 
 }
 
 .link {
   text-decoration: none;
-  display: block; /* 设置链接为块级元素，以占据整行宽度 */
+  display: block; 
 }
 
 :visited {
   color: rgb(255, 255, 255);
 }
-
 

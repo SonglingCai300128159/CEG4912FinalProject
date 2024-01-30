@@ -9,6 +9,10 @@ import first_floor from '../components/Assets/first_floor.jpg'
 import ic_light from '../components/Assets/icons-light-50.png'
 import Button from '../pages/Button'
 import icon_arm from '../components/Assets/icon-arm-50.png'
+import icon_up_left from '../components/Assets/icons-up-left-corner-48.png'
+import icon_up_right from '../components/Assets/icons-up-right-corner-48.png'
+import icon_down_left from '../components/Assets/icons-down-left-corner-48.png'
+import icon_down_right from '../components/Assets/icons-down-right-corner-48.png'
 const Control_detail = () => {
   
   return (
@@ -29,7 +33,7 @@ const Control_detail = () => {
                 </div>
                 <Switch serialNumber={6}/>
               </div>
-              <div className='logo_name'><h3>Curtain1</h3></div>
+              <div className='logo_name'><h3>Curtain 1</h3></div>
           </div>
           <div id='indoor_btn'>
               <div className='logo_btn'>
@@ -38,7 +42,7 @@ const Control_detail = () => {
                 </div>
                 <Switch serialNumber={7}/>
               </div>
-              <div className='logo_name'><h3>Curtain2</h3></div>
+              <div className='logo_name'><h3>Curtain 2</h3></div>
           </div>
           <div id='indoor_btn'>
               <div className='logo_btn'>
@@ -58,7 +62,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={0}/>
             </div>
-            <div className='logo_name'><h3>Light1</h3></div>
+            <div className='logo_name'><h3>Light 1</h3></div>
           </div>
           <div id='indoor_btn'>
             <div className='logo_btn'>
@@ -67,7 +71,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={1}/>
             </div>
-            <div className='logo_name'><h3>Light2</h3></div>
+            <div className='logo_name'><h3>Light 2</h3></div>
           </div>
           <div id='indoor_btn'>
             <div className='logo_btn'>
@@ -76,7 +80,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={2}/>
             </div>
-            <div className='logo_name'><h3>Light3</h3></div>
+            <div className='logo_name'><h3>Light 3</h3></div>
           </div>
           <div id='indoor_btn'>
             <div className='logo_btn'>
@@ -85,7 +89,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={3}/>
             </div>
-            <div className='logo_name'><h3>Light4</h3></div>
+            <div className='logo_name'><h3>Light 4</h3></div>
           </div>
           <div id='indoor_btn'>
             <div className='logo_btn'>
@@ -94,7 +98,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={4}/>
             </div>
-            <div className='logo_name'><h3>Light5</h3></div>
+            <div className='logo_name'><h3>Light 5</h3></div>
           </div>
           <div id='indoor_btn'>
             <div className='logo_btn'>
@@ -103,7 +107,7 @@ const Control_detail = () => {
               </div>
                 <Switch serialNumber={5}/>
             </div>
-            <div className='logo_name'><h3>Light6</h3></div>
+            <div className='logo_name'><h3>Light 6</h3></div>
           </div>
         </section>
         <section id='arm'>
@@ -112,6 +116,7 @@ const Control_detail = () => {
               <div className='logo_btn'>
                 <div>
                   <img src={icon_arm} alt=''></img>
+                  <img src={icon_up_left}></img>
                 </div>
                   <Button>Up</Button>
                   <Button>Down</Button>
@@ -124,6 +129,7 @@ const Control_detail = () => {
               <div className='logo_btn'>
                 <div>
                   <img src={icon_arm} alt=''></img>
+                  <img src={icon_up_right}></img>
                 </div>
                 <Button>Up</Button>
                 <Button>Down</Button>
@@ -136,6 +142,7 @@ const Control_detail = () => {
               <div className='logo_btn'>
                 <div>
                   <img src={icon_arm} alt=''></img>
+                  <img src={icon_down_left}></img>
                 </div>
                 <Button>Up</Button>
                 <Button>Down</Button>
@@ -148,6 +155,7 @@ const Control_detail = () => {
               <div className='logo_btn'>
                 <div>
                   <img src={icon_arm} alt=''></img>
+                  <img src={icon_down_right}></img>
                 </div>
                 <Button>Up</Button>
                 <Button>Down</Button>
