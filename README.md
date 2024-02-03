@@ -19,6 +19,8 @@ npm install styled-components
 
 npm install rsuite
 
+npm install socket.io-client
+
 !!!!!for server, before run app.py in serverdriver, add "pip install Flask Flask-SocketIO Flask-CORS
 " in terminal
 
