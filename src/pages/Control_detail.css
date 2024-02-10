@@ -17,7 +17,7 @@ flex-direction: column;
 align-items: center;
 gap: 20px;
 background: linear-gradient(to bottom, #4e4e53, #2c2b2b);
-border-radius: 10px;
+border-radius: 20px;
 padding:30px;
 height: max-content;
 }
@@ -35,8 +35,8 @@ color: rgb(143, 131, 185);*/
   flex-direction: row;
   justify-content:center;
   align-items: center;
-  width: 1580px;
-  min-height: 716px;
+  width: 158vh;
+  height: 712vh;
   gap:50px;
 }
 
@@ -62,7 +62,7 @@ gap:20px;
 }
 .LED{
   background: linear-gradient(to bottom, #4e4e53, #2c2b2b);
-  border-radius: 10px;
+  border-radius: 20px;
   padding:30px;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ gap:20px;
 }
 #arm{
   background: linear-gradient(to bottom, #4e4e53, #2c2b2b);
-  border-radius: 10px;
+  border-radius: 20px;
   padding:30px;
   display: flex;
   flex-direction: column;
@@ -107,4 +107,5 @@ gap:20px;
   color: #ffffff;
   padding-inline: 20px;
   align-items: center;
+  gap:2vh;
 }

@@ -2,12 +2,21 @@
    display: flex;
     justify-content: center;
     background-color: rgb(230, 231, 235);
-    min-width: 680px;
-    min-height: 520px;
+    min-width: 1030px;
+    min-height: 710px;
     border-radius: 3%;
-    box-shadow: 0 0 100px rgb(18, 15, 39);
+    justify-content: center;
+    align-items: center;
 }
 .cam_content{
     display: flex;
     padding-top: 5%;
+    justify-content: space-between;
+    gap:5vh;
+}
+.log{
+    border:white;
+    border-style: solid;
+    width: 70vh;
+    text-align: center;
 }
