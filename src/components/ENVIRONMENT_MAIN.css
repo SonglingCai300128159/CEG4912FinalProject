@@ -1,24 +1,20 @@
 .text{
     color:white;
-    font-size: 150%;
 }
 .data{
     color:aquamarine;
-    font-size: 150%;
 }
 .env {
   display: flex;
-  justify-content: space-between; /* Distribute the components evenly */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between; 
+  align-items: flex-end;
   flex-wrap: wrap;
   gap: 20px; 
   }
 .container{
 display: flex;
 flex-direction: column;
-align-items: center;
 justify-content: center;
-align-content: center;
 text-align: center;
 gap:20px;
 }
@@ -34,26 +30,22 @@ gap:20px;
 
 .monitor{
   display: flex;
-  background-color: rgba(21, 33, 46, 0.7);
-  border-style: solid;
-  color: white;
   font-size: 15px;
-  padding: 1vh 1vh;
-  border-radius: 40px;
-  border-color: rgba(255, 255, 255, 1);
+  padding: 10px 10px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  gap: 2vh;
+  gap: 3vh;
   flex-direction: column;
 }
 #monitor_content{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
 }
 #monitor_title{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 #img_warning{
   height: 40px;
@@ -62,4 +54,11 @@ gap:20px;
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+.container_cam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
