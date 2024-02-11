@@ -3,7 +3,7 @@
 }
 .container {
     display: flex;
-    justify-content: center; /* 在水平方向上居中对齐 */
+    justify-content: center; 
     align-items: center; 
   }
 .status{

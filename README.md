@@ -19,6 +19,13 @@ npm install styled-components
 
 npm install rsuite
 
-!!!!!for server, before run app.py in serverdriver, add "pip install Flask Flask-CORS" in terminal
+npm install socket.io-client
+
+!!!!!for server, before run app.py in serverdriver, add "pip install Flask Flask-SocketIO Flask-CORS
+" in terminal
+
+pip install opencv-python numpy
 
 use npm start to boot local webapp
+
+

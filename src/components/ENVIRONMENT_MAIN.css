@@ -1,8 +1,10 @@
 .text{
     color:white;
+    font-size: 150%;
 }
 .data{
     color:aquamarine;
+    font-size: 150%;
 }
 .env {
   display: flex;
@@ -36,12 +38,12 @@ gap:20px;
   border-style: solid;
   color: white;
   font-size: 15px;
-  padding: 10px 10px;
+  padding: 1vh 1vh;
   border-radius: 40px;
   border-color: rgba(255, 255, 255, 1);
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  gap: 20px;
+  gap: 2vh;
   flex-direction: column;
 }
 #monitor_content{

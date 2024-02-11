@@ -1,6 +1,6 @@
 .switch-container {
-    width: 100px;
-    height: 50px;
+    width: 10vh;
+    height: 5vh;
     border-radius: 30px;
     position: relative;
     cursor: pointer;
@@ -8,8 +8,8 @@
   }
   
   .switch-slider {
-    width: 50px;
-    height: 50px;
+    width: 5vh;
+    height: 5vh;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
