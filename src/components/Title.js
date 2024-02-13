@@ -1,8 +1,6 @@
 function TITLE() {
     return (
-        <div>
-            <h2>Net Zero Tiny House Control System</h2>    
-        </div>
+        <h1>Net Zero Tiny House</h1>    
     );
 };
 export default TITLE;

@@ -1,0 +1,35 @@
+.switch-container {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .switch-slider {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+  }
+  
+  .switch-container.on {
+    background-color: rgba(250, 190, 10, 0.808);
+  }
+  
+  .switch-container.off {
+    background-color: #ccc;
+  }
+  
+  .switch-container.on .switch-slider {
+    transform: translateX(30px);
+  }
+  
+  .switch-container.off .switch-slider {
+    transform: translateX(0);
+  }

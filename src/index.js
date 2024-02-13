@@ -3,16 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DataProvider } from './components/DataContext';
+
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
 } from "react-router-dom";
 import Enviroment_detail from './pages/Enviroment_detail';
-import Battery_detail from './pages/Battery_detail';
+import Control_detail from './pages/Control_detail';
 import Camera_detail from './pages/Camera_detail';
 import Water_detail from './pages/Water_detail';
-
+import Info_detail from './pages/Info_detail'
 
 const router = createBrowserRouter([
   {
@@ -20,12 +22,12 @@ const router = createBrowserRouter([
     element: <App/>,
   },
   {
-    path: "fans",
-    element: <Enviroment_detail/>,
+    path: "air",
+    element: <DataProvider><Enviroment_detail/></DataProvider>,
   },
   {
-    path: "Battery",
-    element: <Battery_detail/>,
+    path: "control",
+    element: <Control_detail/>,
   },
   {
     path: "water-tank",
@@ -35,7 +37,10 @@ const router = createBrowserRouter([
     path: "Camera",
     element: <Camera_detail/>,
   },
-  
+  {
+    path: "info",
+    element: <Info_detail/>,
+  },
   
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

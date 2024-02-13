@@ -4,29 +4,60 @@
 .data{
     color:aquamarine;
 }
-.container {
-    display: flex;
-    justify-content: space-between; /* Distribute the components evenly */
-    align-items: center; /* Center items vertically */
-  
-    /* Adjust spacing if needed */
-    gap: 10px; /* Adds space between components */
+.env {
+  display: flex;
+  justify-content: space-between; /* Distribute the components evenly */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  gap: 20px; 
   }
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: center;
+text-align: center;
+gap:20px;
+}
+
 
 .temperature_data,
 .humidity_data,
-.CO2_data,
+.PM10_data,
 .PM25_data {
-  display: flex; /* 使用 Flexbox 布局 */
-  align-items: center; /* 垂直居中对齐 */
+  display: flex; 
+  align-items: center; 
 }
 
-/* 媒体查询，当屏幕宽度小于某个阈值时切换为垂直布局 */
-@media (max-width: 768px) {
-    .container {
-      flex-direction: column; /* 切换为垂直布局 */
-      align-items: flex-start; /* 调整垂直布局的对齐方式 */
-    }
-
-
-  }
+.monitor{
+  display: flex;
+  background-color: rgba(21, 33, 46, 0.7);
+  border-style: solid;
+  color: white;
+  font-size: 15px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  border-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  flex-direction: column;
+}
+#monitor_content{
+  display: flex;
+  justify-content: center;
+}
+#monitor_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#img_warning{
+  height: 40px;
+}
+#warning{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

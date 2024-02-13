@@ -1,20 +1,16 @@
 import CircularProgressBarBattery from './CircularProgressBarBattery';
-import { useState } from 'react';
-function BATTERY_MAIN() {
-    const [percentage, setPercentage] = useState(30);
-    return (
-        <div>
-            <h2>battery</h2>
-            <CircularProgressBarBattery percentage={percentage} circleWidth="200" />
-            <div>
-            <input 
-              type="range"
-              min="0"
-              max="100" 
-              step="1" value={percentage} onChange={(ev)=>setPercentage(ev.target.value)}/>
-              </div>
-        </div>
-    );
+import React, { useState, useEffect } from 'react';
+import { useData } from './DataContext';
+import '../components/battery_main.css'
+const BATTERY_MAIN = () => {
+  const {batteryPercentage,fetchData} = useData();
+  
+  return (
+    <div id='batterycmp'>
+      <h3 className='BWTitle'>Battery</h3>
+      <CircularProgressBarBattery batteryPercentage={batteryPercentage} circleWidth="200" />
+    </div>
+  );
 };
 
 export default BATTERY_MAIN;

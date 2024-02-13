@@ -9,7 +9,6 @@ body {
   background-size: 100% 100%; /* 调整背景大小以覆盖整个容器 */
   background-repeat: no-repeat; /* Prevent background image from repeating */
   background-position: center; /* Center the background image */
-  margin: 0;
   padding: 0;
   background-attachment: fixed; /* 固定背景图像在视口上 */
 }

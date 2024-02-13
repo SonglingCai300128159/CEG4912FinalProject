@@ -1,29 +1,24 @@
-import CircularProgressBarWater from './CircularProgressBarWater';
 import { useState } from 'react';
 import React from 'react';
 import'./watermain.css';
-function WATER_MAIN() {
-    const [percentage, setPercentage] = useState(35);
-    const [filled, setFilled]= useState(35);
+import { useData } from './DataContext';
+const WATER_MAIN = () =>{
+    //const [percentage, setPercentage] = useState(35);
+    //const [filled, setFilled]= useState(35);
+    const { BlackwaterPercentage } = useData(50);
     return (
-        <div>
-            <p>water here</p>
-            <div className="progressbarwater">
-                <div style={{
-                    height: '100%',
-                    width: `${filled}%`,
-                    backgroundColor: '#008cff',
-                    
-                }}></div>
-                <span className='progressfont'>CleanWater {filled}%</span>
+      <div id='watercmp'>
+       
+       <h3 className='BWTitle'>Black Water</h3>
+        <div id='watercontent'>
+            <div class="watercircle" style={{
+            background: `linear-gradient(#84adc8 ${100-BlackwaterPercentage}%, #1f3b6e ${100-BlackwaterPercentage+10}%)`,
+            }}>
+            <p class="circle-text">{BlackwaterPercentage}%</p>
             </div>
-            <CircularProgressBarWater percentage={percentage} circleWidth="200" />
-            <input 
-              type="range" 
-              min="0" 
-              max="100" 
-              step="1" value={percentage} onChange={(ev)=>setPercentage(ev.target.value)} />
         </div>
+        
+      </div>
     );
 
     

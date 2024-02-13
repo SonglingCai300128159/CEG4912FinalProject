@@ -3,49 +3,17 @@
 .app {
   display: flex;
   flex-direction: column;
- 
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
   color: #ffffff;
-}
-.divider{
-  display: flex;
-  justify-content: space-between; /* Distribute the components evenly */
+  gap: 30px;
   align-items: center;
+}
 
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-  width: 100%;
-}
-:visited{
-  color: rgb(255, 255, 255);
-}
-.navtext{
-  font-size:xx-large;
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between; /* Distribute the components evenly */
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-  width: 100%;
-
-}
 :root{
-  --color1: #008cff;
+  --color1: #00ffff;
   --color2: #10d863;
   --color3: #df850f;
 }
-.link{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-  flex: 1;
-  width: 100%;
-}
+
 .circleBackendWater{
   fill:none;
   stroke: #b9b8c9;
@@ -60,7 +28,7 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.WaterText{
+.BatteryText{
   font-size: 3rem;
   font-weight: bold;
 }
@@ -71,55 +39,99 @@
   stroke-linejoin: round;
 }
 .title {
-  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
-  border-radius: 10px; /* 圆角边缘 */
   padding: 20px;
-  margin-bottom: 20px; /* 底部边距 */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  margin-bottom: 20px; 
+  text-align: center;
+  margin-top: 20px;
+  width:100%
+}
+.BWTitle{
   text-align: center;
 }
-
-.content {
+#batterycmp{
+  text-align: center;
+  align-items: center;
+}
+.info_content{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* 允许子元素换行 */
-  gap: 20px; /* 子元素之间的间距 */
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.Function_Bar,
+.Detect_Main,
 .Battery_Main,
 .Camera_Main,
 .Water_Main,
 .Environment_Main {
-  flex: 1; /* 让模块自动增长 */
-  background-color: rgba(77, 86, 126, 0.9); /* 半透明背景色 */
-  border-radius: 10px; /* 圆角边缘 */
+  background: linear-gradient(to bottom, #4e4e53, #1a1919);
+  border-radius: 10px; 
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-  min-width: 300px; /* 设置最小宽度 */
-  backdrop-filter: blur(10px); /* 添加模糊效果 */
-  opacity: 0.9; /* 降低块的不透明度 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  min-width: 300px; 
+  backdrop-filter: blur(10px); 
+  opacity: 0.9; 
+  display: flex;
+  justify-content: center;
+  align-self:flex-start;
+  min-height: 300px;
 }
-
-@media (max-width: 768px) {
-  /* 在小屏幕上，每行显示两个模块 */
-  .Function_Bar,
-  .Battery_Main,
-  .Camera_Main,
-  .Water_Main,
-  .Environment_Main {
-    flex-basis: calc(50% - 10px); /* 50%减去间距 */
-  }
+.Function_Bar{
+  background: linear-gradient(to bottom, #4e4e53, #1a1919);
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  min-width: 300px; 
+  backdrop-filter: blur(10px); 
+  opacity: 0.9; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 630px;
 }
-
-@media (max-width: 480px) {
-  /* 在更小的屏幕上，每行显示一个模块 */
-  .Function_Bar,
-  .Battery_Main,
-  .Camera_Main,
-  .Water_Main,
-  .Environment_Main {
-    flex-basis: 100%;
-  }
+.homebtn {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.page_layout{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #ffffff;
+  padding-inline: 20px;
+}
+.main_content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  gap:30px;
+  justify-content: flex-start;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  gap:15vh;
+}
+.water_content{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.lower_main{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
 }
