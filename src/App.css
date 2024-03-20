@@ -39,10 +39,8 @@
   stroke-linejoin: round;
 }
 .title {
-  padding: 20px;
-  margin-bottom: 20px; 
+  margin: 30px;
   text-align: center;
-  margin-top: 20px;
   width:100%
 }
 .BWTitle{
