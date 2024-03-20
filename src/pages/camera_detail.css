@@ -2,8 +2,6 @@
    display: flex;
     justify-content: center;
     background: linear-gradient(to bottom, #4e4e53, #1a1919);
-    border: solid;
-    border-color: #6d6d6e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     min-width: 1030px;
     min-height: 710px;
@@ -23,8 +21,7 @@
     padding: 20px 30px;
     border-radius: 30px;
     cursor: pointer;
-    border: solid;
-    border-color: #6d6d6e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 70vh;
     text-align: center;
     
