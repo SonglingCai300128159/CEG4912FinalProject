@@ -5,6 +5,7 @@
     
   font-family: 'Arial', sans-serif;
   font-size: 240px;
+  color: aqua;
 }
 .env_content{
     
@@ -16,9 +17,51 @@
   
   
 }
+.humidity_container{
+  height: 520px;
+  width: 60px;
+  background: #373e44;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.temperature_cmp{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background: linear-gradient(to bottom, #4e4e53, #1a1919);
+  border-radius: 40px;
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-height: 600px;
+}
+.temperature-display {
+  display: flex;
+  border-radius: 75%;
+  height: 220px;
+  width: 220px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgba(230, 92, 0,0.55);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 12px #58626b solid;
+  transition: background 0.5s;
+}
+.cold {
+  background: #035aa6;
+}
+.warm{
+  background: rgb(109, 218, 6);
+}
+.hot {
+  background: #ff5200;
+}
 #setpower,
 .air_cmp,
-.temperature_cmp,
 .humidity_cmp{
   display: flex;
   flex-direction: column;
@@ -30,8 +73,7 @@
     border-radius: 40px;
     border-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 90%;
-  min-height: 630px;
+  min-height: 600px;
 }
 .temperature_data,
 .humidity_data{

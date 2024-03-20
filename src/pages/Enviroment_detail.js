@@ -4,7 +4,6 @@ import './Enviroment_detail.css'
 import ic_home from '../components/Assets/icon-house.png'
 import {  Link } from 'react-router-dom'
 import {useData} from '../components/DataContext'
-import Thermometer from 'react-thermometer-component'
 import "rsuite/dist/rsuite.min.css"
 import air_icon from "../components/Assets/icons8-air-50.png"
 import pm25_ic from '../components/Assets/pm25.png'
@@ -16,6 +15,19 @@ import ic_fan_power from '../components/Assets/Fan_power.png'
 const ENVIRONMENT_DETAIL = () => {
   const{temperatureData,humidityData,co2Data,pm25Data,pm10Data} = useData();
   const[percentage, setPercentage] = useState(20);
+  const [temperatureColor, setTemperatureColor] = ("cold");
+  const [temperatureValue, setTemperatureValue] = useState(10);
+  const changeTemp = () => {
+    let bgcolor;
+    if (temperatureData >= 0 && temperatureData <= 10){
+      bgcolor = 'green';
+    } else if (temperatureData >= 10 && temperatureData <=20){
+      bgcolor = 'orange';
+    } else {
+      bgcolor = 'rgb(230, 92, 0)';
+    }
+    return bgcolor;
+    }
   return (
     <div className='page_layout'>
       <div className='page_header'>
@@ -24,24 +36,22 @@ const ENVIRONMENT_DETAIL = () => {
       </div>
       <div className='env_content' >
         <div className='temperature_cmp'>
-            <Thermometer 
-            theme="dark" 
-            value={temperatureData}
-            max="50"
-            steps="5"
-            format="°C" 
-            size="large"
-            height="600"
-            className="bigThermometer"/>
+            
+              <div style={{backgroundColor:changeTemp()}} className={`temperature-display`}>
+                  {temperatureData}°C
+              </div>
+            
             <div className='temperature_data'>
-                <h4 className='text'>Temp: </h4>
+                <h4 className='text'>Temperature: </h4>
                 <h4 className='data'>{temperatureData}°C</h4>
             </div>        
         </div>
 
         
         <div className='humidity_cmp' style={{height: 600}}>
-            <Progress.Line vertical strokeWidth={40} percent={humidityData} status="active" style={{height:500}}/>
+            <div className='humidity_container' >
+                <Progress.Line vertical strokeWidth={40} percent={humidityData} status="active" style={{height:500}}/>
+            </div>
                             <div className='humidity_data'>
                                 <h4 className='text'>Humidity: </h4>
                                 <h4 className='data'>{humidityData}%</h4>

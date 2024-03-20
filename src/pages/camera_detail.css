@@ -10,7 +10,7 @@
 }
 .cam_content{
     display: flex;
-    padding-top: 5%;
+    padding: 20px;
     justify-content: space-between;
     gap:5vh;
 }
