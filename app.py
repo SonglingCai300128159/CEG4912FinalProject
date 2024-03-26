@@ -6,6 +6,7 @@ import tempSenor
 import pm25
 import waterDepth
 import relay
+import batteryDriver
 
 clini = waterDepth.get_waterdepth(0)
 grini = waterDepth.get_waterdepth(3)
@@ -29,6 +30,8 @@ def get_sensor_data():
     grwater = (waterDepth.get_waterdepth(3)-grini)/maxWaterDepth*100
     print(waterDepth.get_waterdepth(3))
     blwater = (waterDepth.get_waterdepth(2)-blini)/maxWaterDepth*100
+    batteryvoltage = (batteryDriver.get_battery_voltage)
+    batterycurrent = (batteryDriver.get_battery_current)
     data = {
         'temperatureData': temp,
         'humidityData': humi,
@@ -38,7 +41,9 @@ def get_sensor_data():
         'batteryPercentage': 69,
         'CleanwaterPercentage': clwater,
         'GreywaterPercentage':grwater,
-        'BlackwaterPercentage':blwater
+        'BlackwaterPercentage':blwater,
+        'batteryvoltage':batteryvoltage,
+        'batterycurrent':batterycurrent
     }
     return jsonify(data)
 
