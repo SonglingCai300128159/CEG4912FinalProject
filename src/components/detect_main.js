@@ -8,20 +8,19 @@ import Switch from '../pages/switch';
 const detect_main = () => {
     return(
         
-        <div className='container'>
-            <div className='monitor'>
+        <div className='container_cam'>
                 <div id='monitor_title'>
-                    <img src={cam_icon} alt='' className='icon' />
-                    <p>Surveillance System</p>
+                    <h3>Surveillance</h3>
                 </div>
                 <div id='monitor_content'>
+                    <img src={cam_icon} alt='' className='icon' />
                     <Switch />
                 </div>
                 <div id='warning'>
                     <img src={ic_warning} id='img_warning'></img>
                     <h3>Detect: Human</h3>
                 </div>
-            </div>
+
             <div className='vehicle'>
 
             </div>

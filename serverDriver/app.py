@@ -1,7 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request,render_template
 from flask_cors import CORS
 import subprocess
 import RPi.GPIO as GPIO
+import cv2
+import base64
+from flask_socketio import SocketIO
+from cam import process_frame 
 
 lights = {0: False, 1: False, 2: False, 3: False, 4: False, 5: False}
 bdlight = 26
@@ -20,6 +24,7 @@ GPIO.output(storage, GPIO.HIGH)
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
+socketio = SocketIO(app)
 
 @app.route('/api/temperature-data', methods=['GET'])
 def get_sensor_data():
@@ -88,7 +93,26 @@ def get_light_status(serial_number):
     else:
         return jsonify({'status': 'error', 'message': f'Light with serial number {serial_number} not found'})
 
+#add socket io for opencv 
+@app.route('/api/camera-feed', methods=['GET'])
+def camera_feed():
+    cap = cv2.VideoCapture(0)  
+
+    while cap.isOpened():
+        ret, frame = cap.read()
+
+        if not ret:
+            break
+
+        _, img_encoded = cv2.imencode('.jpg', frame)
+        img_base64 = base64.b64encode(img_encoded.tobytes()).decode('utf-8')
+
+        socketio.emit('camera_frame', img_base64)
+
+    cap.release()
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    socketio.run(app, debug=True)
     GPIO.cleanup()
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CircularProgressBarBattery = ({batteryPercentage, circleWidth}) => {
-const radius = 85;
+const radius = 70;
 const dashArray= radius* Math.PI * 2;
 const dashOffset= dashArray-(dashArray*batteryPercentage) /100;
 

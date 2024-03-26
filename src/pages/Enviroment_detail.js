@@ -36,11 +36,11 @@ const ENVIRONMENT_DETAIL = () => {
       </div>
       <div className='env_content' >
         <div className='temperature_cmp'>
-            <div className="temperature-display-container">
+            
               <div style={{backgroundColor:changeTemp()}} className={`temperature-display`}>
                   {temperatureData}°C
               </div>
-            </div>
+            
             <div className='temperature_data'>
                 <h4 className='text'>Temperature: </h4>
                 <h4 className='data'>{temperatureData}°C</h4>

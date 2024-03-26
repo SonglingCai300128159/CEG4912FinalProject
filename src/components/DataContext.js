@@ -16,6 +16,8 @@ export const DataProvider = ({ children }) => {
   const [batteryPercentage, setBatteryPercentage] = useState(40);
   const [CleanwaterPercentage, setCleanWaterPercentage] = useState(50);
   const [GreywaterPercentage, setGreyWaterPercentage] = useState(35);
+  const [batteryvoltage, setBatteryVoltage] = useState(12);
+  const [batterycurrent, setBatteryCurrent] = useState(0.01);
   const apiUrl = 'http://127.0.0.1:5000/api/temperature-data';
 
   const fetchData = () => {
@@ -31,6 +33,8 @@ export const DataProvider = ({ children }) => {
         setBlackWaterPercentage(data.BlackwaterPercentage);
         setCleanWaterPercentage(data.CleanwaterPercentage);
         setGreyWaterPercentage(data.GreywaterPercentage);
+        setBatteryVoltage(data.batteryvoltage);
+        setBatteryCurrent(data.batterycurrent);
       })
       .catch((error) => console.error('Error fetching data:', error));
   };
@@ -58,6 +62,8 @@ export const DataProvider = ({ children }) => {
         CleanwaterPercentage,
         BlackwaterPercentage,
         GreywaterPercentage,
+        batteryvoltage,
+        batterycurrent,
         fetchData,
       }}
     >
