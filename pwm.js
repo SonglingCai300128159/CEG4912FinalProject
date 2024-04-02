@@ -4,18 +4,16 @@ import '../pages/Enviroment_detail.css';
 const Flowrate = ({ powerLevel, onPowerLevelChange }) => {
     const [currentPowerLevel, setCurrentPowerLevel] = useState(powerLevel);
 
-    useEffect(() => {
-        setCurrentPowerLevel(powerLevel);
-    }, [powerLevel]);
+    useEffect(() => {setCurrentPowerLevel(powerLevel);}, [powerLevel]);
 
     const handleValueChange = async (newValue) => {
         try {
             // GET the current state from the server
             const getResponse = await fetch(`http://localhost:5000/api/fan_power`);
-            const currentData = await getResponse.json();
+            const getData = await getResponse.json();
 
             // Update local state with fetched value
-            setCurrentPowerLevel(currentData.fanpwm);
+            setCurrentPowerLevel(getData.fanpwm);
 
             // POST the new power level to the server
             const postResponse = await fetch(`http://localhost:5000/api/fan_power/${newValue}`, {
