@@ -1,50 +1,51 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../pages/Enviroment_detail.css';
 
-const Flowrate = ({ PowerLevel }) => {
-    const [Power, setPower] = useState(0);
+const Flowrate = ({ powerLevel, onPowerLevelChange }) => {
+    const [currentPowerLevel, setCurrentPowerLevel] = useState(powerLevel);
 
     useEffect(() => {
-        const fetchInitialStatus = async () => {
-            try {
-                const response = await fetch(`http://localhost:5000/api/fan_power/${PowerLevel}`);
-                const data = await response.json();
-                setPower(data.fanpwm);
-            } catch (error) {
-                console.error('Error fetching initial light status:', error);
-            }
-        };
+        setCurrentPowerLevel(powerLevel);
+    }, [powerLevel]);
 
-        fetchInitialStatus();
-    }, [PowerLevel]);
-
-    const handleValue = async () => {
+    const handleValueChange = async (newValue) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/fan_power/${PowerLevel}`, {
+            // GET the current state from the server
+            const getResponse = await fetch(`http://localhost:5000/api/fan_power`);
+            const currentData = await getResponse.json();
+
+            // Update local state with fetched value
+            setCurrentPowerLevel(currentData.fanpwm);
+
+            // POST the new power level to the server
+            const postResponse = await fetch(`http://localhost:5000/api/fan_power/${newValue}`, {
                 method: 'POST',
             });
-            const data = await response.json();
-            setPower(data.fanpwm);
+            const postData = await postResponse.json();
+
+            // Update PowerLevel prop with the new value
+            onPowerLevelChange(postData.fanpwm);
         } catch (error) {
-            console.error('Error fectching power:', error);
+            console.error('Error fetching or posting power:', error);
         }
     };
 
     return (
         <>
-        <input
-            type="range"
-            orient="horizontal"
-            min="0"
-            max="100"
-            step="1" value={Power}
-            onChange={(ev) => {
-                setPower(ev.target.value);
-                handleValue(ev);
-            }}
-        />
-        
-        <div> {Power} % Power</div>
+            <input
+                type="range"
+                orient="horizontal"
+                min="0"
+                max="100"
+                step="1"
+                value={currentPowerLevel}
+                onChange={(ev) => {
+                    const newValue = ev.target.value;
+                    setCurrentPowerLevel(newValue); // Update local state immediately
+                    handleValueChange(newValue); // Fetch and post new value
+                }}
+            />
+            <div> {currentPowerLevel} % Power </div>
         </>
     );
 };

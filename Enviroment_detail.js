@@ -17,6 +17,11 @@ const ENVIRONMENT_DETAIL = () => {
   const{temperatureData,humidityData,co2Data,pm25Data,pm10Data} = useData();
   const [temperatureColor, setTemperatureColor] = ("cold");
   const [temperatureValue, setTemperatureValue] = useState(10);
+  const [powerLevel, setPowerLevel] = useState(0);
+
+    const handlePowerLevelChange = (newValue) => {
+        setPowerLevel(newValue);
+    };
   const changeTemp = () => {
     let bgcolor;
     if (temperatureData >= 0 && temperatureData <= 10){
@@ -89,7 +94,7 @@ const ENVIRONMENT_DETAIL = () => {
             <div>
                 
             </div>
-            <Flowrate PowerLevel = {0}/>
+            <Flowrate powerLevel={powerLevel} onPowerLevelChange={handlePowerLevelChange} />
         </div>
                    
       </div>
