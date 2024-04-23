@@ -9,7 +9,7 @@ First download all necessary files from github and extract them
 
 To turn on the tiny house control system:
 
-On the orange pi, go to the file contains best.onnx，best5_0.onnx，camera.py，test1.py，yolov8_to_onnx_webCam.py, right click inside the file and choose "open in termial", On the command line, type (sudo python test1.py), remember do not type the ( or ) On the command line.
+On the orange pi, go to the file contains best.onnx，best5_0.onnx，camera.py，test1.py，yolov8_to_onnx_webCam.py, right click inside the file and choose "open in termial", On the command line, type (sudo python test1.py), remember do not type the "(" or ")" On the command line.
 
 On the respberry pi: go to the sensorDriver/serverDriver, right click inside the file and choose "open in termial", On the command line, type (sudo python3 app.py) to run flask server
 
