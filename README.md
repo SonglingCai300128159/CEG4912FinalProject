@@ -7,7 +7,7 @@ File on respberry pi: on the respberry pi the server file test1.py is under home
 
 IF you cannot find the file, You can download all necessary files from github and extract them on orange pi(best.onnx，best5_0.onnx，camera.py，test1.py，yolov8_to_onnx_webCam.py) and respberry pi(final_tinyhouse.zip, SensorDriver_final.zip)
 
-To turn on the tiny house control system:
+To turn on the tiny house Object recognition module:
 
 On the orange pi, go to the file contains best.onnx，best5_0.onnx，camera.py，test1.py，yolov8_to_onnx_webCam.py, right click inside the file and choose "open in termial", On the command line, type (sudo python test1.py), remember do not type the "(" or ")" On the command line.
 
