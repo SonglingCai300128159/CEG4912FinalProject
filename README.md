@@ -15,8 +15,8 @@ For ther react app:
 
 On the respberry pi: 
 
-First way is to go to the sensorDriver/serverDriver, right click inside the file and choose "open in termial", On the command line, type (sudo python3 app.py) to run flask server
+Go to the sensorDriver/serverDriver, right click inside the file and choose "open in termial", On the command line, type (sudo python3 app.py) to run flask server
 
 Then go to the file you extract the final_tinyhouse.zip, right click inside the file and choose "open in termial", On the command line, type (npm install) to download necessary node_modules, after finished, type (npm start) to run the app.
 
-Second way: find a .sh file(named start.sh) on the desktop of respberry pi, right click it and choose "run as software/app/application". Then open the browser and wait until the react app start.(There may be a short wait)
+Second way(only can be used if you use the current react app instead of downloading the file from github): find a .sh file(named start.sh) on the desktop of respberry pi, right click it and choose "run as software/app/application". Then open the browser and wait until the react app start.(There may be a short wait)
