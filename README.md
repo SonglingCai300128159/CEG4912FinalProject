@@ -1,6 +1,8 @@
 # CEG4912FinalProject
 CEG4912 F00 GROUP 5 Final Project
 
+user guide:
+
 File on orangePI: best.onnx，best5_0.onnx，camera.py，test1.py，yolov8_to_onnx_webCam.py （make sure they are under the same file, The file can be found under the path or folder named "orangepi"）
 
 File on respberry pi: on the respberry pi the server file test1.py is under home/SensirDriver/serverdriver, the react app should be inside the home/vscode/.../tinyhouse/project
